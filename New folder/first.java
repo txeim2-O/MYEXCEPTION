@@ -17,6 +17,8 @@ public class first {
             checkage(17);
         }catch(TarunException e){
             System.out.println(e.getMessage());
+        }finally{
+            System.out.println("the name of the person is tarun");
         }
     }
 }
