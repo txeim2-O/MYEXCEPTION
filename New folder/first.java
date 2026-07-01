@@ -18,7 +18,7 @@ public class first {
         }catch(TarunException e){
             System.out.println(e.getMessage());
         }finally{
-            System.out.println("the name of the person is tarun");
+            System.out.println("the name of the person is sam ");
         }
     }
 }
