@@ -8,10 +8,10 @@ public class numberGuess {
         int randint=random.nextInt(1,101);
         int counter=1;
         try{
-            System.out.print("Enter your number between 1 to 100git init");
+            System.out.print("Enter your number between 1 to 100 digit init");
             int num=input.nextInt();
             if(num==randint){
-                System.out.println("Your have found the number in your 1th chance");
+                System.out.println("Your have found the number in your 1 chance");
             }
             else{
                 while(num!=randint){
@@ -28,10 +28,7 @@ public class numberGuess {
         }catch(InputMismatchException e){
             System.out.println("Input should be a number");
         }
- 
-        
     }
-   
 }
 
  
