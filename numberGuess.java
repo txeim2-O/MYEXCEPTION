@@ -8,7 +8,7 @@ public class numberGuess {
         int randint=random.nextInt(1,101);
         int counter=1;
         try{
-            System.out.print("Enter your number between 1 to 100 digit init");
+            System.out.print("Enter your number between 1 to 100 digit:");
             int num=input.nextInt();
             if(num==randint){
                 System.out.println("Your have found the number in your 1 chance");
