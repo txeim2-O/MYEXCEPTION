@@ -20,3 +20,29 @@ public class prefixsum {
     }
     
 }
+
+public class prefixsum {
+
+    public static int rangeSum(int[] arr, int left, int right){
+        int [] prefix=new int[arr.length];
+        prefix[0]=arr[0];
+        for(int i=1;i<arr.length;i++){
+            prefix[i]=arr[i]+prefix[i-1];
+        }
+        if(left==0){
+            return prefix[right];
+        }
+        else{
+            return prefix[right]-prefix[left-1];
+        }
+
+    }
+    public static void main(String[] args) {
+        int[] arr={3, 7, 2, 5, 8};
+        int left=1;
+        int right=3;
+        int sol=rangeSum(arr, left, right);
+        System.out.println(sol);
+        
+    }
+}
